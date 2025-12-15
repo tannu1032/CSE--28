@@ -1,0 +1,192 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nykaa Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fc2779;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.nav-right input {
+    padding: 6px;
+    border: none;
+    outline: none;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Products */
+.products {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #f6f6f6;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">nykaa</div>
+
+        <ul class="menu">
+            <li>Makeup</li>
+            <li>Skin</li>
+            <li>Hair</li>
+            <li>Offers</li>
+        </ul>
+
+        <div class="nav-right">
+            <input type="text" placeholder="Search on Nykaa">
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Nykaa Banner">
+        <div class="banner-text">
+            <h1>Big Beauty Sale</h1>
+            <p>Up to 50% Off</p>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <section class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa" alt="Makeup">
+            <h3>Makeup</h3>
+            <p>Starting at ₹499</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9" alt="Skincare">
+            <h3>Skincare</h3>
+            <p>Glow Essentials</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1597354984706-fac992d9306f" alt="Haircare">
+            <h3>Hair Care</h3>
+            <p>Salon at Home</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://bellavitaluxury.co.in/cdn/shop/files/Everready_Women_Combo.jpg?v=1721283252" alt="Perfume">
+            <h3>Fragrances</h3>
+            <p>Top Picks</p>
+        </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348" alt="Lipstick">
+        <h3>Lipsticks</h3>
+        <p>Bold Shades</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" alt="Foundation">
+        <h3>Foundation</h3>
+        <p>Flawless Finish</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd" alt="Hair Oil">
+        <h3>Hair Oils</h3>
+        <p>Nourish & Shine</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908" alt="Face Mask">
+        <h3>Face Masks</h3>
+        <p>Instant Glow</p>
+    </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+         <p>© 2025 Nykaa Clone | HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
